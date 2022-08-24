@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -13,8 +13,8 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-light border border-dark p-0 m-0">
-        <a class="navbar-brand border border-dark m-0 p-0" href="#">Icone Logo a mettre</a>
+    <nav class="navbar navbar-expand-sm navbar-light border border-dark p-0 m-0 align-items-stretch"">
+        <a class=" navbar-brand border border-dark m-0 p-0" href="#">LOGO</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,6 +26,191 @@
             </ul>
         </div>
     </nav>
+    <div class="row justify-content-end m-3">
+        <a href="./creer.html" class="btn btn-light border border-dark">Ajouter un nouveau collaborateur</a>
+    </div>
+
+    <div class="container-fluid px-5">
+        <div class="row">
+            <h1>Les Collaborateurs</h1>
+        </div>
+        <form action="#" method="post">
+            <div class="form-row align-items-center">
+                <div class="form-group col-sm-6 d-flex align-items-center">
+                    <label for="researchText" class="col-sm-6 p-2 text-right">Rechercher un nom ou un prénom qui
+                        commence par :
+                    </label>
+                    <input type="text" name="researchText" id="researchText" class="form-control col-sm-6" />
+                </div>
+                <div class="form-group col-sm-2">
+                    <button type="button" class="form-control btn-white" style="width: 150px;">Rechercher</button>
+                </div>
+                <div class="form-group col-sm-4 d-flex justify-content-end">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="allCollaborators">
+                        <label class="form-check-label" for="allCollaborators">
+                            Voir les collaborateurs désactivés
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row align-items-center">
+                <div class="form-group d-flex col-sm-6">
+                    <label for="selectDepartmentFilter" class="col-sm-6 p-2 text-right">Filtrer par département :
+                    </label>
+                    <select class="form-control col-sm-6" id="selectDepartmentFilter">
+                        <option>Tous</option>
+                        <option>Comptabilité</option>
+                        <option>Ressources Humaines</option>
+                        <option>Informatique</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container-fluid px-5 d-flex flex-wrap">
+        <div class="card d-flex">
+            <div class="card-header">
+                NOM Prénom
+            </div>
+            <div class="card-body p-0 m-0 d-flex">
+                <img class="card-img-left img-fluid w-25" src="gris.svg" alt="Card image cap">
+                <div class="card-text">
+                    <div class="flex-column">
+                        <div class="d-flex justify-content-between row">
+                            <label for="roleCard1" class="m-0 col-sm">Fonction</label>
+                            <input type="text" id="roleCard1" readonly class="form-control-plaintext col-sm"
+                                value="value">
+                        </div>
+                        <div class="d-flex justify-content-between row">
+                            <label for="departmentCard1" class="m-0 col-sm">Département</label>
+                            <input type="text" id="departmentCard1" readonly class="form-control-plaintext col-sm"
+                                value="value">
+                        </div>
+                        <div class="d-flex justify-content-between row">
+                            <label for="mailCard1" class="m-0 col-sm">Email</label>
+                            <input type="email" readonly id="mailCard1" class="form-control-plaintext col-sm"
+                                value="email@example.com">
+                        </div>
+                        <div class="d-flex justify-content-between row">
+                            <label for="phoneCard1" class="m-0 col-sm">Téléphone</label>
+                            <input type="tel" readonly id="phoneCard1" class="form-control-plaintext col-sm"
+                                value="+33 5555555" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-flex flex-row-reverse">
+                <button type="button" class="form-control btn-white" style="width: 150px;">Editer</button>
+            </div>
+        </div>
+        <div class="card d-flex">
+            <div class="card-header">
+                NOM Prénom
+            </div>
+            <div class="card-body p-0 m-0 d-flex">
+                <img class="card-img-left img-fluid w-25" src="gris.svg" alt="Card image cap">
+                <div class="card-text">
+                    <div class="flex-column">
+                        <div class="d-flex justify-content-between row">
+                            <label for="roleCard1" class="m-0 col-sm">Fonction</label>
+                            <input type="text" id="roleCard1" readonly class="form-control-plaintext col-sm"
+                                value="value">
+                        </div>
+                        <div class="d-flex justify-content-between row">
+                            <label for="departmentCard1" class="m-0 col-sm">Département</label>
+                            <input type="text" id="departmentCard1" readonly class="form-control-plaintext col-sm"
+                                value="value">
+                        </div>
+                        <div class="d-flex justify-content-between row">
+                            <label for="mailCard1" class="m-0 col-sm">Email</label>
+                            <input type="email" readonly id="mailCard1" class="form-control-plaintext col-sm"
+                                value="email@example.com">
+                        </div>
+                        <div class="d-flex justify-content-between row">
+                            <label for="phoneCard1" class="m-0 col-sm">Téléphone</label>
+                            <input type="tel" readonly id="phoneCard1" class="form-control-plaintext col-sm"
+                                value="+33 5555555" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-flex flex-row-reverse">
+                <button type="button" class="form-control btn-white" style="width: 150px;">Editer</button>
+            </div>
+        </div>
+        <div class="card d-flex">
+            <div class="card-header">
+                NOM Prénom
+            </div>
+            <div class="card-body p-0 m-0 d-flex">
+                <img class="card-img-left img-fluid w-25" src="gris.svg" alt="Card image cap">
+                <div class="card-text">
+                    <div class="flex-column">
+                        <div class="d-flex justify-content-between row">
+                            <label for="roleCard1" class="m-0 col-sm">Fonction</label>
+                            <input type="text" id="roleCard1" readonly class="form-control-plaintext col-sm"
+                                value="value">
+                        </div>
+                        <div class="d-flex justify-content-between row">
+                            <label for="departmentCard1" class="m-0 col-sm">Département</label>
+                            <input type="text" id="departmentCard1" readonly class="form-control-plaintext col-sm"
+                                value="value">
+                        </div>
+                        <div class="d-flex justify-content-between row">
+                            <label for="mailCard1" class="m-0 col-sm">Email</label>
+                            <input type="email" readonly id="mailCard1" class="form-control-plaintext col-sm"
+                                value="email@example.com">
+                        </div>
+                        <div class="d-flex justify-content-between row">
+                            <label for="phoneCard1" class="m-0 col-sm">Téléphone</label>
+                            <input type="tel" readonly id="phoneCard1" class="form-control-plaintext col-sm"
+                                value="+33 5555555" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-flex flex-row-reverse">
+                <button type="button" class="form-control btn-white" style="width: 150px;">Editer</button>
+            </div>
+        </div>
+        <div class="card d-flex">
+            <div class="card-header">
+                NOM Prénom
+            </div>
+            <div class="card-body p-0 m-0 d-flex">
+                <img class="card-img-left img-fluid w-25" src="gris.svg" alt="Card image cap">
+                <div class="card-text">
+                    <div class="flex-column">
+                        <div class="d-flex justify-content-between row">
+                            <label for="roleCard1" class="m-0 col-sm">Fonction</label>
+                            <input type="text" id="roleCard1" readonly class="form-control-plaintext col-sm"
+                                value="value">
+                        </div>
+                        <div class="d-flex justify-content-between row">
+                            <label for="departmentCard1" class="m-0 col-sm">Département</label>
+                            <input type="text" id="departmentCard1" readonly class="form-control-plaintext col-sm"
+                                value="value">
+                        </div>
+                        <div class="d-flex justify-content-between row">
+                            <label for="mailCard1" class="m-0 col-sm">Email</label>
+                            <input type="email" readonly id="mailCard1" class="form-control-plaintext col-sm"
+                                value="email@example.com">
+                        </div>
+                        <div class="d-flex justify-content-between row">
+                            <label for="phoneCard1" class="m-0 col-sm">Téléphone</label>
+                            <input type="tel" readonly id="phoneCard1" class="form-control-plaintext col-sm"
+                                value="+33 5555555" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-flex flex-row-reverse">
+                <button type="button" class="form-control btn-white" style="width: 150px;">Editer</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

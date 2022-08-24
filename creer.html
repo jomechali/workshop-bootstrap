@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>SGP - Creer collaborateur</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-light border border-dark p-0 m-0 align-items-stretch"">
+        <a class=" navbar-brand border border-dark m-0 p-0" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="btn btn-info" href="#">Collaborateurs</a></li>
+                <li class="nav-item"><a class="btn btn-light" href="#">Statistiques</a></li>
+                <li class="nav-item"><a class="btn btn-light" href="#">Activités</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid px-5">
+        <div class="row">
+            <h1>Nouveau Collaborateur</h1>
+        </div>
+        <div class="container">
+            <form action="#" method="post">
+                <div class="form-group row">
+                    <label for="name" class="col-sm-4 col-form-label">Nom</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="firstName" class="col-sm-4 col-form-label">Prénom</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="birthDate" class="col-sm-4 col-form-label">Date de naissance</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="birthDate">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="address" class="col-sm-4 col-form-label">Adresse</label>
+                    <div class="col-sm-6">
+                        <textarea class="form-control" id="address" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="socialSecurityNumber" class="col-sm-4 col-form-label">Numéro de sécurité sociale</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="socialSecurityNumber">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10 d-flex flex-row-reverse">
+                        <button type="button" class="btn-white border border-dark" data-toggle="modal"
+                            data-target="#exampleModalCenter">Créer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="dist/jquery-1.9.1.min.js"></script>
+    <script src="dist/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
