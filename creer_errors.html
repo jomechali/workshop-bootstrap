@@ -32,40 +32,40 @@
             <h1>Nouveau Collaborateur</h1>
         </div>
         <div class="container">
-            <form action="#" method="post">
+            <form action="#" method="post" class="was-validated">
                 <div class="form-group row">
                     <label for="name" class="col-sm-4 col-form-label">Nom</label>
                     <div class="col-sm-6">
                         <input type="text" class="form-control" id="name" required>
-                        <div class="invalid-feedback d-block">Le nom est obligatoire.</div>
+                        <div class="invalid-feedback">Le nom est obligatoire.</div>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="firstName" class="col-sm-4 col-form-label">Prénom</label>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="firstName">
-                        <div class="invalid-feedback d-block">Le prénom est obligatoire.</div>
+                        <input type="text" class="form-control" id="firstName" required>
+                        <div class="invalid-feedback">Le prénom est obligatoire.</div>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="birthDate" class="col-sm-4 col-form-label">Date de naissance</label>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="birthDate">
-                        <div class="invalid-feedback d-block">La date de naissance est obligatoire.</div>
+                        <input type="text" class="form-control" id="birthDate" required>
+                        <div class="invalid-feedback">La date de naissance est obligatoire.</div>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="address" class="col-sm-4 col-form-label">Adresse</label>
                     <div class="col-sm-6">
-                        <textarea class="form-control" id="address" rows="3"></textarea>
-                        <div class="invalid-feedback d-block">L'adresse est obligatoire.</div>
+                        <textarea class="form-control" id="address" rows="3" required></textarea>
+                        <div class="invalid-feedback">L'adresse est obligatoire.</div>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="socialSecurityNumber" class="col-sm-4 col-form-label">Numéro de sécurité sociale</label>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="socialSecurityNumber">
-                        <div class="invalid-feedback d-block">Le numéro de sécurité sociale est obligatoire.</div>
+                        <input type="text" class="form-control" id="socialSecurityNumber" required>
+                        <div class="invalid-feedback">Le numéro de sécurité sociale est obligatoire.</div>
                     </div>
                 </div>
                 <div class="form-group row">
