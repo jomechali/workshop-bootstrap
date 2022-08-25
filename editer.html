@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>SGP - Creer collaborateur</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-light border border-dark p-0 m-0 align-items-stretch"">
+        <a class=" navbar-brand border border-dark m-0 p-0" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="btn btn-info" href="#">Collaborateurs</a></li>
+                <li class="nav-item"><a class="btn btn-light" href="#">Statistiques</a></li>
+                <li class="nav-item"><a class="btn btn-light" href="#">Activités</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-5">
+        <div class="row">
+            <div class="col-md-4 d-none d-md-block align-self-center">
+                <img class="card-img-left img-fluid" src="gris.svg" alt="Card image cap">
+            </div>
+            <div class="container col-md-8">
+                <h1>NOM Prénom - Matricule</h1>
+
+                <form action="" method="post" class="py-3">
+                    <div class="d-flex flex-column">
+                        <button class="btn btn-white my-1" type="button" data-toggle="collapse" data-target="#identity"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Identité
+                        </button>
+                    </div>
+                    <fieldset class="form-group collapse show" id="identity">
+                        <div class="form-group row">
+                            <label for="selectCivilite" class="col-sm-4 text-right">Civilité
+                            </label>
+                            <div class="col-sm-8">
+                                <select class="form-control" id="selectCivilite">
+                                    <option></option>
+                                    <option>Monsieur</option>
+                                    <option>Madame</option>
+                                    <option>Autre</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-4 col-form-label text-right">Nom</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="firstName" class="col-sm-4 col-form-label text-right">Prénom</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="firstName">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="birthDate" class="col-sm-4 col-form-label text-right">Date de naissance</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="birthDate">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="address" class="col-sm-4 col-form-label text-right">Adresse</label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" id="address" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="socialSecurityNumber" class="col-sm-4 col-form-label text-right">Numéro de
+                                sécurité
+                                sociale</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="socialSecurityNumber">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="phoneNumber" class="col-sm-4 col-form-label text-right">Téléphone</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="phoneNumber">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="d-flex flex-column">
+                        <button class="btn btn-white my-1" type="button" data-toggle="collapse" data-target="#job"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Poste
+                        </button>
+                    </div>
+                    <fieldset class="form-group collapse" id="job">
+
+                        <div class="form-group row">
+                            <label for="selectDepartmentFilter" class="col-sm-4 text-right">Département
+                            </label>
+                            <div class="col-sm-8">
+                                <select class="form-control" id="selectDepartmentFilter">
+                                    <option>Tous</option>
+                                    <option>Comptabilité</option>
+                                    <option>Ressources Humaines</option>
+                                    <option>Informatique</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="jobTitle" class="col-sm-4 col-form-label text-right">Nom</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="jobTitle">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="d-flex flex-column">
+                        <button class="btn btn-white my-1" type="button" data-toggle="collapse"
+                            data-target="#bankDetails" aria-expanded="true" aria-controls="collapseOne">
+                            Identité
+                        </button>
+                    </div>
+                    <fieldset class="form-group collapse" id="bankDetails">
+
+                        <div class="form-group row">
+                            <label for="iban" class="col-sm-4 col-form-label text-right">IBAN</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="iban">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="BIC" class="col-sm-4 col-form-label text-right">BIC</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="BIC">
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                    <div class="d-flex flex-row-reverse mt-3">
+                        <button type="submit" class="btn btn-white">Sauvegarder</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="dist/jquery-1.9.1.min.js"></script>
+    <script src="dist/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
